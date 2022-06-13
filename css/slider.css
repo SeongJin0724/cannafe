@@ -4,6 +4,7 @@
   margin: 0 auto;
   position: relative;
 }
+
 .swiper .swiper-slide .slide_title_container {
   color: #B58A4C;
   font-size: 150px;
@@ -15,12 +16,13 @@
   width: 500px;
   float: left;
 }
+
 .swiper .swiper-slide>.slide_img {
   display: flex;
   justify-content: flex-end;
   animation: bounce 3s infinite ease-in-out;
-
 }
+
 .swiper .swiper-slide .slide_img>img {
   max-width: 100%;
 }
@@ -29,86 +31,133 @@
   0% {
     transform: translateY(-5px);
   }
+
   50% {
     transform: translateY(-15px);
   }
+
   100% {
     transform: translateY(-5px);
   }
 }
-.left_aside_btn_container .swiper-button-next{
+
+.left_aside_btn_container .swiper-button-next {
   position: absolute;
   top: 80%;
   left: 120px;
   color: rgba(255, 255, 255, 0.445);
 }
+
 .left_aside_btn_container .swiper-button-prev {
   position: absolute;
   top: 80%;
   left: 70px;
   color: rgba(255, 255, 255, 0.445);
 }
+
+@media (max-width: 1370px) {
+  .swiper .swiper-slide>.slide_img {
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .swiper .swiper-slide .slide_title_container {
+    font-size: 120px;
+  }
+
+  .swiper .swiper-slide>.slide_img {
+    padding-top: 170px;
+  }
+}
+
+@media (max-width: 960px) {
+  .swiper .swiper-slide .slide_title_container {
+    width: 300px;
+    font-size: 80px;
+    text-align: left;
+  }
+
+  .swiper .swiper-slide>.slide_img {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper .swiper-slide .slide_title_container {
+    width: 200px;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 570px) {
+  .swiper .swiper-slide .slide_title_container {
+    float: none;
+    padding-top: 150px;
+  }
+
+  .swiper .swiper-slide>.slide_img {
+    padding-top: 0;
+  }
+}
+
 .our_slider {
   height: 700px;
 }
-.slick-track {
-  height: 650px;
-}
-.slick-slide {
-  width: 440px;
-  height: auto;
-}
+
+
 .our_slider .our_slide {
-  margin:10px;
+  margin: 10px;
   padding: 40px 40px;
   text-align: center;
   background: #F8F7F5;
   box-shadow: 0px 0px 20px rgb(0 0 0 / 16%);
 }
+
 .our_slider .our_slide:last-child {
   margin: 0;
 }
+
 .slick-center .our_slide {
   transform: scale(1.2);
 }
-.our_slider .our_slide .our_slide_img img{
+
+.our_slider .our_slide .our_slide_img img {
   margin: 0 auto;
 }
+
 .slick-center #center_text {
   color: #fff;
   background-color: #F15922;
 }
+
 .our_slider .our_slide .our_slide_text {
   background-color: #B58A4C;
   margin-top: 20px;
   padding: 10px;
 }
+
 .our_slider .our_slide .our_slide_text h3 {
   font-size: 24px;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
 }
+
 .our_slider .our_slide .our_slide_text h5 {
   font-size: 14px;
 }
+
 .slick-prev {
   position: relative;
   top: 50%;
   transform: translate(-50%);
-  left: 0;
+  left: -20px;
   z-index: 1;
   border: 1px solid #B58A4C;
   padding: 10px;
   overflow: hidden;
 }
-.slick-prev::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 50px;
-  height: 50px;
-}
+
 .slick-next {
   position: relative;
   top: -49.4%;
@@ -117,62 +166,143 @@
   border: 1px solid #B58A4C;
   padding: 10px;
 }
+
+@media (max-width: 1400px) {
+  .slick-prev {
+    top: 45%;
+  }
+
+  .slick-next {
+    top: -54.4%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .slick-prev {
+    top: 40%;
+  }
+
+  .slick-next {
+    top: -59.4%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .slick-prev {
+    top: 35%;
+  }
+
+  .slick-next {
+    top: -64.4%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .slick-prev {
+    top: 40%;
+  }
+
+  .slick-next {
+    top: -59.4%;
+  }
+}
+
+@media (max-width: 1020px) {
+  .slick-prev {
+    top: 50%;
+  }
+
+  .slick-next {
+    top: -49.4%;
+  }
+}
+
+@media (max-width: 550px) {
+  .slick-prev {
+    top: 45%;
+  }
+
+  .slick-next {
+    top: -54.4%;
+  }
+}
+
+@media (max-width: 500px) {
+  .slick-prev {
+    top: 40%;
+  }
+
+  .slick-next {
+    top: -59.4%;
+  }
+}
+
 .review_section {
   background-image: url(../img/bg.jpg);
   padding: 100px 0;
   position: relative;
 }
+
 .review_section .review_slider {
-  width: 80%;
-  height: 675px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0px 15px 30px rgb(181 138 76 / 30%);
   z-index: 3;
 }
+
 .review_section::before {
   position: absolute;
-  top: 5%; left: 15%;
+  top: 5%;
+  left: 15%;
   content: "";
   width: 25%;
   height: 90%;
   border: 30px solid #B58A4C;
   z-index: 0;
 }
+
 .review_section .review_slider .review_slide {
+  margin: 0 20px;
+}
+
+.review_section .review_slider .review_slide .review_slide_container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 70px 70px;
 }
+
 .review_section .review_slider .review_slide .review_slide_text_box {
+  width: 100%;
   padding: 200px 0;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
 }
+
 .review_section .review_slider .review_slide .review_slide_text_box p {
   line-height: 1.8;
   font-size: 18px;
 }
+
 .review_section .review_slider .review_slide .review_slide_text_box .review_slide_text_box_name {
-  width: 50%;
-  text-align: right;
+  text-align: center;
   font-size: 26px;
   font-weight: bold;
   color: #F15922;
   margin-top: 30px;
 }
+
 .review_section .review_slider .review_slide .review_slide_text_box .review_slide_text_box_sub_name {
-  width: 45%;
   text-align: center;
 }
+
 .review_section .review_slider .review_slide .review_slide_img_box {
   position: relative;
   padding-bottom: 180px;
 }
+
 .review_section .review_slider .review_slide .review_slide_img_box::after {
   position: absolute;
-  top: -55px; left: 220px;
+  top: -55px;
+  left: 220px;
   content: "";
   border-right: 20px solid #B58A4C;
   border-top: 20px solid #B58A4C;
@@ -180,26 +310,31 @@
   width: 50%;
   height: 90%;
 }
-.review_section .review_slider .review_slide .review_slide_img_box img {
-  width: 350px;
-}
+
+.review_section .review_slider .review_slide .review_slide_img_box img {}
+
 .review-prev {
   position: absolute;
-  bottom: 40px; left: 120px;
+  bottom: 40px;
+  left: 120px;
   font-size: 27px;
   z-index: 1;
   transition: all 0.3s;
 }
+
 .review-next {
   position: absolute;
-  bottom: 40px; left: 140px;
+  bottom: 40px;
+  left: 140px;
   font-size: 27px;
   z-index: 1;
   transition: all 0.3s;
 }
-.review-prev:hover  {
+
+.review-prev:hover {
   font-size: 30px;
 }
+
 .review-next:hover {
   font-size: 30px;
 }

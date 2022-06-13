@@ -8,6 +8,15 @@ $(".our_slider").slick({
   nextArrow:
     "<button type='button' class='slick-next'><i class='fa-solid fa-caret-right' style='color: #b58a4c;'></i></button>",
   centerMode: true,
+  responsive: [
+    {
+      breakpoint: 1020,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 $(".review_slider").slick({
   infinite: true,
