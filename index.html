@@ -132,9 +132,115 @@
               </button>
             </div>
           </nav>
+          <div class="responsive_menu_icon_container">
+            <button class="responsive_menu_icon">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
         </div>
       </div>
     </header>
+    <div class="responsive_menu_container">
+      <div class="responsive_row">
+        <h1 class="responsive_logo">
+          <a href="javascript:void(0)">
+            <img src="./img/logo2.png" alt="CANNAFE" />
+          </a>
+        </h1>
+        <button class="responsive_close"><i class="fa-solid fa-x"></i></button>
+      </div>
+      <nav class="reponsive_nav">
+        <ul class="responsive_menu_wrapper">
+          <li class="responsive_menu_list">
+            <a href="javascript:void(0)">
+              Home
+              <span class="arrow_down"
+                ><i class="fa-solid fa-angle-down"></i>
+              </span>
+            </a>
+            <ul class="responsive_menu_smenu">
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Home1</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Home2</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Home3</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Home4</a>
+              </li>
+            </ul>
+          </li>
+          <li class="responsive_menu_list">
+            <a href="javascript:void(0)">About Us</a>
+          </li>
+          <li class="responsive_menu_list">
+            <a href="javascript:void(0)">Menu</a>
+          </li>
+          <li class="responsive_menu_list">
+            <a href="javascript:void(0)">Blog</a>
+          </li>
+          <li class="responsive_menu_list">
+            <a href="javascript:void(0)"
+              >Pages
+              <span class="arrow_down"
+                ><i class="fa-solid fa-angle-down"></i
+              ></span>
+            </a>
+            <ul class="responsive_menu_smenu">
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">About</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Blog</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">BlogSingle</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Gallery</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Book</a>
+              </li>
+              <li class="responsive_smenu_list">
+                <a href="javascript:void(0)">Menu</a>
+              </li>
+            </ul>
+          </li>
+          <li class="responsive_menu_list">
+            <a href="javascript:vod(0)">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <aside id="aside_content" class="aside_show">
+      <button id="aside_close"><i class="fa-solid fa-x"></i></button>
+      <div class="aside_container">
+        <img src="./img/logo2.png" alt="CANNAFE_logo" />
+        <p>
+          Medical cannabis or medical marijuana is cannabis and cannabinoids.
+        </p>
+        <div class="aside_sns_box">
+          <a href="javascript:void(0)"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="javascript:void(0)">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="javascript:void(0)"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </aside>
+    <aside id="aside_search" class="aside_search_show"></aside>
+    <div class="form_container">
+      <form>
+        <input type="text" placeholder="search" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
+    </div>
     <main>
       <section class="banner_section">
         <aside class="left_aside_btn_container">
@@ -381,9 +487,9 @@
           </div>
           <h1 class="favorite_title">Favorite Cannabis Flavours</h1>
           <ul class="favorite_tab_menu">
-            <li class="favorite_tab_menu_list">
+            <li class="favorite_tab_menu_list active" data-tab="tab1">
               <a href="#">Cappuccino</a>
-              <ul class="favorite_smenu" id="hide">
+              <ul class="favorite_smenu show" id="tab1">
                 <li class="favorite_smenu_list">
                   <div class="favorite_smenu_list_item_container">
                     <div class="favorite_smenu_list_item">
@@ -480,11 +586,68 @@
                 </li>
               </ul>
             </li>
-            <li class="favorite_tab_menu_list">
+            <li class="favorite_tab_menu_list" data-tab="tab2">
               <a href="#">Espresso</a>
-              <ul class="favorite_smenu" id="hide">
+              <ul class="favorite_smenu" id="tab2">
                 <li class="favorite_smenu_list">
                   <div class="favorite_smenu_list_item_container">
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac6.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac6.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac3.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac4.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="favorite_smenu_list_item_container">
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac2.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
                         <img src="./img/mac1.png" alt="mac1" />
@@ -498,41 +661,6 @@
                     </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
-                        <img src="./img/mac2.png" alt="mac1" />
-                      </div>
-                      <div class="favorite_smenu_list_text">
-                        <h4 class="favorite_smenu_list_text_title">
-                          MAC COOKIES
-                        </h4>
-                        <p>Fresh brewed coffee and steamed milk</p>
-                      </div>
-                    </div>
-                    <div class="favorite_smenu_list_item">
-                      <div class="favorite_smenu_list_img">
-                        <img src="./img/mac3.png" alt="mac1" />
-                      </div>
-                      <div class="favorite_smenu_list_text">
-                        <h4 class="favorite_smenu_list_text_title">
-                          MAC COOKIES
-                        </h4>
-                        <p>Fresh brewed coffee and steamed milk</p>
-                      </div>
-                    </div>
-                    <div class="favorite_smenu_list_item">
-                      <div class="favorite_smenu_list_img">
-                        <img src="./img/mac4.png" alt="mac1" />
-                      </div>
-                      <div class="favorite_smenu_list_text">
-                        <h4 class="favorite_smenu_list_text_title">
-                          MAC COOKIES
-                        </h4>
-                        <p>Fresh brewed coffee and steamed milk</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item_container">
-                    <div class="favorite_smenu_list_item">
-                      <div class="favorite_smenu_list_img">
                         <img src="./img/mac5.png" alt="mac1" />
                       </div>
                       <div class="favorite_smenu_list_text">
@@ -544,29 +672,7 @@
                     </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
-                        <img src="./img/mac2.png" alt="mac1" />
-                      </div>
-                      <div class="favorite_smenu_list_text">
-                        <h4 class="favorite_smenu_list_text_title">
-                          MAC COOKIES
-                        </h4>
-                        <p>Fresh brewed coffee and steamed milk</p>
-                      </div>
-                    </div>
-                    <div class="favorite_smenu_list_item">
-                      <div class="favorite_smenu_list_img">
                         <img src="./img/mac3.png" alt="mac1" />
-                      </div>
-                      <div class="favorite_smenu_list_text">
-                        <h4 class="favorite_smenu_list_text_title">
-                          MAC COOKIES
-                        </h4>
-                        <p>Fresh brewed coffee and steamed milk</p>
-                      </div>
-                    </div>
-                    <div class="favorite_smenu_list_item">
-                      <div class="favorite_smenu_list_img">
-                        <img src="./img/mac4.png" alt="mac1" />
                       </div>
                       <div class="favorite_smenu_list_text">
                         <h4 class="favorite_smenu_list_text_title">
@@ -579,9 +685,9 @@
                 </li>
               </ul>
             </li>
-            <li class="favorite_tab_menu_list">
+            <li class="favorite_tab_menu_list" data-tab="tab3">
               <a href="#">Flat White</a>
-              <ul class="favorite_smenu">
+              <ul class="favorite_smenu" id="tab3">
                 <li class="favorite_smenu_list">
                   <div class="favorite_smenu_list_item_container">
                     <div class="favorite_smenu_list_item">
@@ -597,7 +703,7 @@
                     </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
-                        <img src="./img/mac2.png" alt="mac1" />
+                        <img src="./img/mac4.png" alt="mac1" />
                       </div>
                       <div class="favorite_smenu_list_text">
                         <h4 class="favorite_smenu_list_text_title">
@@ -608,7 +714,7 @@
                     </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
-                        <img src="./img/mac3.png" alt="mac1" />
+                        <img src="./img/mac5.png" alt="mac1" />
                       </div>
                       <div class="favorite_smenu_list_text">
                         <h4 class="favorite_smenu_list_text_title">
@@ -643,7 +749,7 @@
                     </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
-                        <img src="./img/mac2.png" alt="mac1" />
+                        <img src="./img/mac1.png" alt="mac1" />
                       </div>
                       <div class="favorite_smenu_list_text">
                         <h4 class="favorite_smenu_list_text_title">
@@ -678,9 +784,9 @@
                 </li>
               </ul>
             </li>
-            <li class="favorite_tab_menu_list">
+            <li class="favorite_tab_menu_list" data-tab="tab4">
               <a href="#">Long Black</a>
-              <ul class="favorite_smenu" id="hide">
+              <ul class="favorite_smenu" id="tab4">
                 <li class="favorite_smenu_list">
                   <div class="favorite_smenu_list_item_container">
                     <div class="favorite_smenu_list_item">
@@ -696,7 +802,7 @@
                     </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
-                        <img src="./img/mac2.png" alt="mac1" />
+                        <img src="./img/mac1.png" alt="mac1" />
                       </div>
                       <div class="favorite_smenu_list_text">
                         <h4 class="favorite_smenu_list_text_title">
@@ -718,7 +824,106 @@
                     </div>
                     <div class="favorite_smenu_list_item">
                       <div class="favorite_smenu_list_img">
+                        <img src="./img/mac2.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="favorite_smenu_list_item_container">
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac5.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac3.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac3.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac5.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="favorite_tab_menu_list" data-tab="tab5">
+              <a href="#">Long Black</a>
+              <ul class="favorite_smenu" id="tab5">
+                <li class="favorite_smenu_list">
+                  <div class="favorite_smenu_list_item_container">
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac2.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
                         <img src="./img/mac4.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac3.png" alt="mac1" />
+                      </div>
+                      <div class="favorite_smenu_list_text">
+                        <h4 class="favorite_smenu_list_text_title">
+                          MAC COOKIES
+                        </h4>
+                        <p>Fresh brewed coffee and steamed milk</p>
+                      </div>
+                    </div>
+                    <div class="favorite_smenu_list_item">
+                      <div class="favorite_smenu_list_img">
+                        <img src="./img/mac6.png" alt="mac1" />
                       </div>
                       <div class="favorite_smenu_list_text">
                         <h4 class="favorite_smenu_list_text_title">
@@ -772,101 +977,6 @@
                         </h4>
                         <p>Fresh brewed coffee and steamed milk</p>
                       </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="favorite_tab_menu_list">
-              <a href="#">Dalgona</a>
-              <ul class="favorite_smenu hide" id="hide">
-                <li class="favorite_smenu_list">
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac1.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac2.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac3.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac4.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac5.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac6.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac7.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
-                    </div>
-                  </div>
-                  <div class="favorite_smenu_list_item">
-                    <div class="favorite_smenu_list_img">
-                      <img src="./img/mac8.png" alt="mac1" />
-                    </div>
-                    <div class="favorite_smenu_list_text">
-                      <h4 class="favorite_smenu_list_text_title">
-                        MAC COOKIES
-                      </h4>
-                      <p>Fresh brewed coffee and steamed milk</p>
                     </div>
                   </div>
                 </li>
@@ -1041,4 +1151,10 @@
   ></script>
   <script src="./js/swiper.js"></script>
   <script src="./js/slick.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/index.js"></script>
 </html>

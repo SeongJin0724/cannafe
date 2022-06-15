@@ -126,7 +126,14 @@ $(".our_slider").slick({
   prevArrow: "<button type='button' class='slick-prev'><i class='fa-solid fa-caret-left' style='color: #b58a4c;'></i></button>",
   // 이전 화살표 모양 설정
   nextArrow: "<button type='button' class='slick-next'><i class='fa-solid fa-caret-right' style='color: #b58a4c;'></i></button>",
-  centerMode: true
+  centerMode: true,
+  responsive: [{
+    breakpoint: 1020,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }]
 });
 $(".review_slider").slick({
   infinite: true,
@@ -165,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "3921" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4333" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

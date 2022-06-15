@@ -33,3 +33,5 @@ doc/*.txt
 doc/**/*.pdf
 
 node_modules/
+.cache/
+dist/
